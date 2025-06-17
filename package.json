@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
+  "dependencies": {
+    "naughty-util": "^0.4.2"
+  }
+}
