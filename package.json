@@ -1,6 +1,6 @@
 {
   "name": "naughty-http",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "NaughtySora <naughtysora@proton.me>",
   "license": "MIT",
   "description": "Nodejs http server, with many helpful features",
