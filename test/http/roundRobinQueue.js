@@ -1,8 +1,9 @@
 'use strict';
 
 const RoundRobinQueue = require("../../lib/Queue/RoundRobinQueue.js");
-const routes = require("./mock.js");
+const { routes } = require("./mock.js");
 const http = require("../../lib/http/index.js");
+const test = require("./test.js");
 
 const categorize = () => Math.floor((Math.random() * 2)) + 1;
 const queue = new RoundRobinQueue({
@@ -12,9 +13,9 @@ const queue = new RoundRobinQueue({
   categorize,
 });
 
-const config = { port: 4999, routes, queue, debug: true };
+const config = { port: 5000, routes, queue, debug: true };
 
 module.exports = () => {
-  const { start, stop } = http(config);
-  start();
+  const { start } = http(config);
+  start().then(test(config));
 };
