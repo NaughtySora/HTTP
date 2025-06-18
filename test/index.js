@@ -4,6 +4,6 @@ const http = require("./http/index.js");
 const queue = require("./Queue/index.js");
 const router = require("./Router/index.js");
 
-const tests = [http];
+const tests = [queue];
 
 for (const test of tests) test();

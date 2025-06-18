@@ -46,7 +46,7 @@ declare class Router {
   find(options: { path: string, method: string }): null | RouterCallback;
 }
 
-type CookieOptions = {
+interface CookieOptions {
   sameSite?: string;
   maxAge?: number | string;
   expires?: Date | string;
