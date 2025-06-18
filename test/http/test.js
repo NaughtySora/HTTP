@@ -8,6 +8,7 @@ const headers = {
 };
 
 const body = () => JSON.stringify({ digit: Math.random(), data: new Date() });
+
 module.exports = (config) => () => {
   for (const { method, path } of routes) {
     const mutable = method !== "get";

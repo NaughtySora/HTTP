@@ -77,7 +77,7 @@ interface Routing {
 
 export const routing: Routing;
 
-interface HTTP {
+interface HTTPServer {
   start(): Promise<void>;
   stop(ms?: number): Promise<void>;
   connect(socket: Socket): void;
@@ -96,4 +96,4 @@ interface HTTPOptions {
   parsingTimeout?: number;
 }
 
-export const http: (options: HTTPOptions) => HTTP;
+export const http: (options: HTTPOptions) => HTTPServer;
