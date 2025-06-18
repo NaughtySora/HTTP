@@ -25,10 +25,10 @@ const endpoints = {
 
 const routes = [
   { method: "get", path: "/meta/config", callback: route(endpoints.config, SERIALIZERS.json) },
-  { method: "post", path: "/ido/details", callback: route(endpoints['details-post'], SERIALIZERS.json) },
-  { method: "put", path: "/ido/details", callback: route(endpoints['details-put'], SERIALIZERS.json) },
-  { method: "delete", path: "/ido/details", callback: route(endpoints['details-delete'], SERIALIZERS.json) },
-  { method: "patch", path: "/ido/details", callback: route(endpoints['details-patch'], SERIALIZERS.json) },
+  { method: "post", path: "/details", callback: route(endpoints['details-post'], SERIALIZERS.json) },
+  { method: "put", path: "/details", callback: route(endpoints['details-put'], SERIALIZERS.json) },
+  { method: "delete", path: "/details", callback: route(endpoints['details-delete'], SERIALIZERS.json) },
+  { method: "patch", path: "/details", callback: route(endpoints['details-patch'], SERIALIZERS.json) },
 ];
 
 module.exports = { routes, endpoints };
