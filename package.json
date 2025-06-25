@@ -25,10 +25,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NaughtySora/naughty-http"
+    "url": "git+https://github.com/NaughtySora/HTTP"
   },
   "bugs": {
-    "url": "https://github.com/NaughtySora/naughty-http/issues",
+    "url": "https://github.com/NaughtySora/HTTP/issues",
     "email": "naughtysora@proton.me"
   },
   "dependencies": {
