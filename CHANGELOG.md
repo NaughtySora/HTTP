@@ -10,3 +10,8 @@
 - a few tests
 - types
 - readme
+
+## [0.1.2] - 2026-04-30
+
+- update deps
+- small refactor
