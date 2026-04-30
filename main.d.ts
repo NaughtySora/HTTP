@@ -1,7 +1,7 @@
 import { EventEmitter } from "node:events";
 import { Socket } from "node:net";
 import { ServerOptions } from "node:http";
-import { UtilsAsync } from "naughty-util";
+import { async } from "naughty-util";
 
 type ProcessCallback = (...params: any[]) => Promise<any>;
 type RouterCallback = (params: HTTPCallbackParameters) => Promise<any>;
@@ -72,7 +72,7 @@ type RouteComposition = (module: [Controller, Handler], serializer: Serializer) 
 
 interface Routing {
   route: RouteComposition;
-  SERIALIZERS: Record<string, (...params: any[]) => UtilsAsync["compose"]>;
+  SERIALIZERS: Record<string, (...params: any[]) => typeof async["compose"]>;
 }
 
 export const routing: Routing;
